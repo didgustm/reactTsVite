@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "strict": true,
+        "moduleResolution": "node",
+        "jsx": "react-jsx",
+        "baseUrl": "./src",
+        "paths": {
+            "@font/*": ["assets/font/*"],
+            "@css/*": ["assets/css/*"],
+            "@img/*": ["assets/images/*"],
+            "@comp/*": ["components/*"],
+            "@page/*": ["pages/*"],
+            "@util/*": ["utils/*"]
+        },
+        "types": ["vite/client"]
+    },
+    "include": ["**/*.ts", "**/*.tsx", "@types/**/*.d.ts"]
+}

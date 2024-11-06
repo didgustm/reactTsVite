@@ -1,0 +1,29 @@
+{
+  "schedule": [
+    {
+      "id": 1,
+      "date": "26",
+      "activity": "F45"
+    },
+    {
+      "id": 2,
+      "date": "27",
+      "activity": "삼겹살 먹기"
+    },
+    {
+      "id": 3,
+      "date": "28",
+      "activity": "휴식"
+    },
+    {
+      "id": 4,
+      "date": "29",
+      "activity": "Two Fold"
+    },
+    {
+      "id": 5,
+      "date": "30",
+      "activity": "오후 반차"
+    }
+  ]
+}

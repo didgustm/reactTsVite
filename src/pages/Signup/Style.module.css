@@ -1,0 +1,83 @@
+.form{
+    width:100%;
+    max-width:375px;
+    padding:2rem 2.4rem;
+}
+.inputs{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width:100%;
+    margin-bottom:2rem
+}
+.inputs input{
+    width:100%;
+    padding:1.4rem;
+    border-radius:10px;
+    background:#fff;
+    border:1px solid var(--gray);
+    font-size:1.5rem
+}
+.label{
+    margin-bottom:0.5rem;
+    font-variation-settings: 'wght' 550;
+}
+.radios{
+    display:flex;
+    gap:2rem
+}
+.radios label{
+    display:flex;
+    align-items:center;
+    gap:0.8rem;
+    cursor:pointer
+}
+.checkbox{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:2rem;
+    height:2rem;
+    border:1px solid var(--gray);
+    border-radius:50%
+}
+.checkbox::after{
+    content:"";
+    visibility:hidden;
+    width:1rem;
+    height:1rem;
+    border-radius:50%;
+    background:var(--purple)
+}
+input:checked + .checkbox{
+    border-color:var(--purple)
+}
+input:checked + .checkbox::after{
+    visibility:visible
+}
+.btns{
+    display:grid;
+    grid-template-columns:1fr 1.5fr 1.5fr;
+    gap:0.5rem;
+    margin-top:3rem
+}
+.btns button{
+    height:5rem; 
+    border-radius:10px
+}
+.btns button:first-child{
+    background:#fff;
+    border:1px solid var(--gray)
+}
+.btns button:nth-child(2){
+    background:var(--gray)
+}
+.btns button:nth-child(3){
+    background:var(--purple);
+    color:#fff
+}
+.errorMsg{
+    font-size:1.2rem;
+    color:#f00;
+    margin-top:0.5rem
+}

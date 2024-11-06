@@ -1,0 +1,11 @@
+.gnb{
+  padding:2rem;
+  background:var(--white);
+  line-height:1.4;
+  font-size:1.4rem
+}
+
+.active {
+  color:var(--purple);
+  font-variation-settings:'wght' 700
+}

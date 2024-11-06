@@ -1,0 +1,23 @@
+const formik = useFormik({
+    initialValues: {
+        uid: '',
+        umail: '',
+    },
+    validate: (values: props) => {
+         const errors = {};
+
+        if (!values.uid) {
+            errors.uid = '아이디를 입력해주세요.';
+        }
+
+        if (!values.umail) {
+            errors.umail = '이메일을 입력해주세요,';
+        } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.umail)) {
+            errors.umail = '잘못된 형식입니다.';
+        }
+    },
+    validateOnChange: false,
+    onSubmit: (values: props) => {
+        console.log(values);
+    },
+});

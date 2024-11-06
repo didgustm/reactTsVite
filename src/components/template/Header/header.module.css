@@ -1,0 +1,11 @@
+.header{
+  height:5.7rem;
+  background:var(--purple);
+  color:var(--white)
+}
+.logo a{
+  display:block;
+  padding: 2rem;
+  font-variation-settings:'wght' 600;
+  font-size:1.7rem;
+}

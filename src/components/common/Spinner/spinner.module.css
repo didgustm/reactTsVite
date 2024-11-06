@@ -1,0 +1,28 @@
+.spinner{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%)
+}
+
+.small svg{
+  transform:scale(0.8)
+}
+.large svg{
+  transform:scale(1.2)
+}
+
+.shape{
+  stroke-dasharray:100px;
+  transform-origin:50% 50%;
+  animation:loading 2s ease infinite
+}
+
+@keyframes loading{
+  60%{
+    stroke-dashoffset:90px
+}
+100%{
+    transform:rotate(2turn); stroke-dashoffset:0
+}
+}

@@ -1,0 +1,10 @@
+<input
+    type="text"
+    name="uid"
+    id="uid"
+    onChange={formik.handleChange}
+    value={formik.values.uid}
+/>
+{formik.errors.uid && (
+    <p className={styles.errorMsg}>{formik.errors.uid}</p>
+)}

@@ -1,0 +1,17 @@
+const [dataList, setDataList] = useState<dataProps[]>();
+
+const getData = async () => {
+  const response = await client.get('/schedule', {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  if (response && response.status === 200) {
+    const { data } = response;
+    setDataList(data);
+  }
+};
+
+useEffect(() => {
+  getData();
+}, []);

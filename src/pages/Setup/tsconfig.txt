@@ -1,0 +1,22 @@
+"compilerOptions": {
+  "target": "ESNext",
+  "module": "ESNext",
+  "skipLibCheck": true,
+  "strict": true,
+  "forceConsistentCasingInFileNames": true,
+  "moduleResolution": "bundler",
+  "resolveJsonModule": true,
+  "isolatedModules": true,
+  "allowSyntheticDefaultImports": true,
+  "jsx": "react-jsx",
+  "baseUrl": "./src",
+  "paths": {
+    "@font/*": ["assets/font/*"],
+    "@css/*": ["assets/css/*"],
+    "@img/*": ["assets/images/*"],
+    "@comp/*": ["components/*"],
+    "@page/*": ["pages/*"]
+  },
+  "types": ["vite/client"]
+},
+"include": ["**/*.ts", "**/*.tsx", "@types/**/*.d.ts"]

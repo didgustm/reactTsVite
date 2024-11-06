@@ -1,0 +1,35 @@
+import { lazy, memo } from 'react';
+import { createBrowserRouter } from 'react-router-dom';
+import Layout from '@comp/template/Layout';
+
+const Main = lazy(() => import('@page/Main'));
+const Basic = lazy(() => import('@page/Basic'));
+const Setup = lazy(() => import('@page/Setup'));
+const Router = lazy(() => import('@page/Router'));
+
+const MemoLayout = memo(Layout);
+
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <MemoLayout />,
+    children: [
+      {
+        path: '',
+        element: <Main />,
+      },
+      {
+        path: '/basic',
+        element: <Basic />,
+      },
+      {
+        path: '/setup',
+        element: <Setup />,
+      },
+      {
+        path: '/router',
+        element: <Router />,
+      },
+    ],
+  },
+]);
