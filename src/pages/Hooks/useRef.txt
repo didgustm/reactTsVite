@@ -1,0 +1,12 @@
+const ref = useRef(null);
+
+const handleChangeColor = () => {
+    ref.current.style.color = 'red';
+};
+
+return (
+    <p ref={ref}>ref target</p>
+    <button onClick={handleChangeColor}>
+        ref 컬러 변경
+    </button>
+)

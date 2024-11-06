@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 
-function Wrapper({ children, title }: WrapperProps) {
+function Wrapper({ children, title, ...props }: WrapperProps) {
     return (
-        <div>
+        <div {...props}>
             <h2 className="title">{title && title}</h2>
             {children && children}
         </div>

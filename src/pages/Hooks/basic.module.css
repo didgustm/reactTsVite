@@ -4,8 +4,8 @@
     gap:5px;
     margin-top:5px
 }
-.exState button{
-    width:30px;
+.basicBtn{
+    min-width:30px;
     padding:5px;
     border-radius:5px;
     background:var(--gray)
